@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        >
+
+        <ListView
+            android:id="@+id/ListView_font"
+            android:layout_width="100dp"
+            android:layout_height="300dp"
+            android:clickable="true"
+            >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/Button_color"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="Color"
+                >
+            </Button>
+
+            <TextView
+                android:id="@+id/TextView_color"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Size"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                >
+
+                <ImageButton
+                    android:id="@+id/ImageButton_up"
+                    android:layout_width="46dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/arrow_up" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton_down"
+                    android:layout_width="46dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/arrow_down" />
+
+                <TextView
+                    android:id="@+id/TextView_size"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:text="aa"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextView_sample"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Sample Text"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Button_set"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:text="확인"
+        android:onClick="mOnClose"
+        />
+</LinearLayout>
